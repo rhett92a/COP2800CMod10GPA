@@ -1,16 +1,29 @@
 // Penguin.java
-// 
-// 
+// Rhett Smith
+// 11/6/2026
 // Represents a Palmer Penguin
 
 package edu.fscj.cop2800c.penguin;
 
 // Penguin class extends the Bird base class
-public class Penguin {
+public class Penguin extends Bird {
     // private fields
+    private String species;
+    private double flipperLength;
 
 
     // Constructor
+    
+     public Penguin(int sampleNum, String species,
+               double culmenLength, double culmenDepth,
+               double bodyMass, String sex, double flipperLength) {
+
+    super(sampleNum, culmenLength, culmenDepth, bodyMass, sex);
+
+    this.species = species;
+    this.flipperLength = flipperLength;
+}
+
 
 
     // Getter methods
